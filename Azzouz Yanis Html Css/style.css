@@ -1,0 +1,342 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Changer la police d'écriture */
+    margin: 0;
+    padding: 0;
+    background: url('test.jpeg') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo-container img {
+    width: 50px;
+    margin-right: 30px;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#search-box {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search-button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+#left-section {
+    flex: 1;
+    text-align: left;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 65px; /* Ajout d'une marge en haut */
+}
+
+.image-container {
+    position: relative;
+    width: 24%; /* Ajustement de la largeur des images */
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.image-text {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 5px;
+    box-sizing: border-box;
+    transition: font-size 0.3s;
+}
+
+#right-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+#right-section h3 p {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fond plus clair */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px; /* Bordure plus arrondie */
+}
+
+#iframe-container {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#episode-buttons {
+    margin-top: 20px;
+}
+
+#episode-buttons button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#episode-buttons button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligner à gauche */
+}
+
+#header-right span {
+    margin-left: 10px; /* Ajustement de la marge à gauche */
+}
+
+#header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+#header-right a:hover {
+    text-decoration: underline;
+}
+#iframe-wrapper {
+    position: relative;
+    border: 2px solid black;
+    padding: 10px; /* Ajoutez du padding si nécessaire */
+    box-sizing: border-box; /* Assurez-vous que le padding ne modifie pas la largeur totale */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Superposition semi-transparente */
+    margin-left:280px;
+    margin-right:280px;
+     border-radius: 20px;
+}
+body {
+    /* Votre style existant */
+    position: relative;
+}
+
+#toggle-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2; /* S'assurer que le bouton reste au-dessus du contenu */
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+#toggle-sidebar:hover {
+    background: #555;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* La largeur du menu */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    transition: 0.3s;
+    overflow-y: scroll;
+    z-index: 1; /* S'assurer que le menu est sous le bouton */
+    background: #333;
+    color: white;
+    transition: 0.3s;
+    overflow-y: scroll;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Your Beautiful Font', sans-serif;
+    border: 2px solid white;
+    border-right: none;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    padding: 8px;
+    cursor: pointer;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Your Beautiful Font', sans-serif; /* Remplacez 'Your Beautiful Font' par le nom de la police de votre choix */
+    color: white;
+}
+#sidebar li:hover {
+    background: #555;
+}
+#iframe-container {
+    /* Votre style existant */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+     text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#iframe-wrapper {
+    /* Votre style existant */
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-left: 280px;
+    margin-right: 280px;
+    border-radius: 20px;
+        position: relative;
+    border: 2px solid black;
+    padding: 20px; /* Augmentez le padding pour plus d'espace */
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-left: 280px;
+    margin-right: 280px;
+    border-radius: 20px;
+}
+#sidebar {
+    /* Autres styles existants */
+    color: white;
+    font-family: 'Your Beautiful Font', sans-serif;
+}
+
+#sidebar ul {
+    /* Styles pour la liste non ordonnée */
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    /* Styles pour chaque élément de la liste */
+    font-family: 'Your Beautiful Font', sans-serif;
+    color: white;
+}
+
+#sidebar a {
+    /* Styles pour les liens dans la barre latérale */
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar a:hover {
+    /* Styles pour les liens lorsqu'ils sont survolés */
+    text-decoration: underline;
+}
+.text-container {
+    background-color: #333;
+    padding: 20px; /* Ajoutez du padding selon vos besoins */
+    border-radius: 10px; /* Ajoutez une bordure arrondie si nécessaire */
+    color: white; /* Changer la couleur du texte en blanc */
+    max-width: 550px; /* Ajoutez la largeur maximale souhaitée */
+    margin: 0 auto; /* Centre le bloc horizontalement */
+}
+#left-section {
+    flex: 1;
+    text-align: left;
+    margin-right: 50px; /* La moitié de l'espace souhaité (car il y a deux côtés) */
+}
+
+#right-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin-left: 50px; /* La moitié de l'espace souhaité (car il y a deux côtés) */
+}
+#iframe-container h2 {
+    border: 2px solid #333;
+    padding: 10px; /* Ajoutez du padding si nécessaire */
+    box-sizing: border-box; /* Assurez-vous que le padding ne modifie pas la largeur totale */
+    text-align: center; /* Pour centrer le texte dans la bordure */
+    background-color:#333;
+    color:white;
+    margin-left:600px;
+    margin-right:600px;
+    border-radius:30px;
+    }
+
+
+
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Votre Titre</title>
+    <script src="javaScript.js"></script>
+</head>
+<body>
+
+    <header>
+    
+        <h1>HUNTER X HUNTER</h1>
+        <div id="logo-container">
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="instagram.jpeg" alt="Logo 1">
+        </a>    
+         <a href="https://www.ecole-isitech.com" target="_blank">
+            <img src="isitech.jpeg" alt="Logo 2">
+    	</a>
+    	 <a href="https://www.discord.com" target="_blank">
+            <img src="discord.jpeg" alt="Logo 3">
+        </a>  
+        </div>
+        <div id="search-container">
+            <input type="text" id="search-box" placeholder="Rechercher...">
+            <button id="search-button">Rechercher</button>
+        </div>
+        <div id="header-right">
+        <span>Bienvenue !</span>
+        <a href="error.html">Mon Compte</a>
+        <a href="index.html">Accueil</a>
+    </div>
+    </header>
+
+    <main>
+        <div id="left-section">
+            <h2>Nos épisodes :</h2>
+             <div class="image-row">
+            <div class="image-container">
+                <div class="image-text">Épisode 1</div>
+                <a href="new.html">
+                    <img src="hxh2.jpeg" alt="Image 1">
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="image-text">Épisode 2</div>
+                <a href="new1.html">
+                    <img src="hxh1.webp" alt="Image 2">
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="image-text">Épisode 3</div>
+                <a href="new2.html">
+                    <img src="hxh3.jpeg" alt="Image 3">
+                </a>
+            </div>
+        </div>
+        <div class="image-row">
+            <div class="image-container">
+                <div class="image-text">Épisode 4</div>
+                <a href="new3.html">
+                    <img src="hxh4.jpeg" alt="Image 4">
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="image-text">Épisode 5</div>
+                <a href="new4.html">
+                    <img src="hxh6.webp" alt="Image 5">
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="image-text">Épisode 6</div>
+                <a href="new5.html">
+                    <img src="hxh7.jpeg" alt="Image 6">
+                </a>
+            </div>
+        </div>
+        <div class="image-row">
+            <div class="image-container">
+                <div class="image-text">Épisode 7</div>
+                <a href="new6.html">
+                    <img src="hxh8.webp" alt="Image 7">
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="image-text">Épisode 8</div>
+                <a href="new7.html" onclick="scrollToBottom()">
+                    <img src="hxh5.jpeg" alt="Image 8">
+                </a>
+            </div>
+            <div class="image-container">
+                <div class="image-text">Épisode 9 (À venir)</div>
+                <a href="lien_vers_episode_9.html">
+                    <img src="soon.avif" alt="Image 9">
+                </a>
+            </div>
+            </div>
+        </div>
+       <button id="toggle-sidebar">&#9654;</button>
+
+    <div id="sidebar">
+        <!-- Contenu du menu ici -->
+        <ul>
+<li><a href="index.html">Accueil</a></li>
+            <li><a href="idées.html">Des idées ? Dites les nous !</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+   </div>
+        <div id="right-section" class="text-container">
+    <h3>Nos objectifs:</h3>
+    <p>Ce site recense différents épisodes d'Hunter X Hunter</br>fait pour les fans par des fans,</br>celui-ci vous simplifiera le visionnage de vos épisodes préférés</br></br>Nous ajouterons au fil des jours plusieurs épisodes visionable en un clic !</p>
+</div>
+    </main>
+
+    <div id="iframe-container">
+        <h2>Épisode 1</h2>
+        <div id="iframe-wrapper">
+        <iframe src="https://vidmoly.to/embed-6az5o2uwvpt4.html" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+     <div id="episode-buttons">
+        <button onclick="window.location.href='ne.html'">Épisode précédent</button>
+        <button onclick="window.location.href='new1.html'">Épisode Suivant</button>
+    </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>

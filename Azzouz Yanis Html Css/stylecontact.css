@@ -1,0 +1,192 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* La hauteur minimale de la fenêtre visible */
+    display: flex;
+    flex-direction: column;
+    background: url('test.jpeg') no-repeat center center fixed; 
+    background-color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    flex: 1; /* Fait en sorte que le main occupe tout l'espace disponible */
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    /* Votre style existant */
+    position: relative;
+}
+
+#toggle-sidebar {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2; /* S'assurer que le bouton reste au-dessus du contenu */
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+#toggle-sidebar:hover {
+    background: #555;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px; /* La largeur du menu */
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    transition: 0.3s;
+    overflow-y: scroll;
+    z-index: 1; /* S'assurer que le menu est sous le bouton */
+    background: #333;
+    color: white;
+    transition: 0.3s;
+    overflow-y: scroll;
+    padding-top: 20px;
+    color: white;
+    font-family: 'Your Beautiful Font', sans-serif;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    padding: 8px;
+    cursor: pointer;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: 'Your Beautiful Font', sans-serif; /* Remplacez 'Your Beautiful Font' par le nom de la police de votre choix */
+    color: white;
+}
+#sidebar li:hover {
+    background: #555;
+}
+#iframe-container {
+    /* Votre style existant */
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+     text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#iframe-wrapper {
+    /* Votre style existant */
+    position: relative;
+    border: 2px solid black;
+    padding: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-left: 280px;
+    margin-right: 280px;
+    border-radius: 20px;
+        position: relative;
+    border: 2px solid black;
+    padding: 20px; /* Augmentez le padding pour plus d'espace */
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-left: 280px;
+    margin-right: 280px;
+    border-radius: 20px;
+}
+#sidebar {
+    /* Autres styles existants */
+    color: white;
+    font-family: 'Your Beautiful Font', sans-serif;
+}
+
+#sidebar ul {
+    /* Styles pour la liste non ordonnée */
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    /* Styles pour chaque élément de la liste */
+    font-family: 'Your Beautiful Font', sans-serif;
+    color: white;
+}
+
+#sidebar a {
+    /* Styles pour les liens dans la barre latérale */
+    text-decoration: none;
+    color: white;
+}
+
+#sidebar a:hover {
+    /* Styles pour les liens lorsqu'ils sont survolés */
+    text-decoration: underline;
+}
